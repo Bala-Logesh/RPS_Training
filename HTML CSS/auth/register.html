@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body class="flex">
+    <div class='form flex'>
+        <h2>Register Form</h2>
+        <div class="form__container flex">
+            <form method='get' class='form__form flex' autocomplete="off">
+                <div class="form__input flex">
+                    <span>Username</span>
+                    <input type="text" name='name' placeholder='Enter your username' />
+                </div>
+                <div class="form__input flex">
+                    <span>Email</span>
+                    <input type="email" name='email' placeholder='Enter your email' />
+                </div>
+                <div class="form__input flex">
+                    <span>Phone Number</span>
+                    <input type="text" name='phone' placeholder='Enter your phone number' />
+                </div>
+                <div class="form__input flex">
+                    <span>Password</span>
+                    <input type="password" name='password' placeholder='Enter your password' />
+                </div>
+                <div class="form__input flex">
+                    <span>Confirm Password</span>
+                    <input type="password" name='confirm_password' placeholder='Reenter your password' />
+                </div>
+                <div class="form__input flex checkbox">
+                    <input type="checkbox" id="tnc" name="tnc" value="tnc">
+                    <span>Agree to the terms & condition</span>
+                </div>
+                <div class="form__buttons flex">
+                    <a href="../middle.html">Register</a>
+                    <a href="../home.html" class="cancel">Cancel</a>
+                </div>
+                <div className="form__links">
+                    <h3><a href="./login.html"><span style="border-bottom: 1px solid #fbffff;">Click here</span></a> to login as an existing user</h3>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

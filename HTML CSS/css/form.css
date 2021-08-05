@@ -1,0 +1,223 @@
+.form{
+    max-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.form.flex{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.form__container{
+    max-height: 80%;
+    width: 50%;
+    overflow-y: scroll;
+    border: 2px solid var(--clr-accent-blue);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form__container.flex{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.form_form{
+    width: 100%;
+    height: 100%;
+}
+
+.form__form.flex{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__form h2{
+    width: 100%;
+    color: var(--clr-accent-red);
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid var(--clr-accent-blue);
+}
+
+.form__form h2:first-child{
+    border-top: none;
+    padding-top: 0;
+}
+
+.form__input.flex{
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    gap: 10px;
+}
+
+.form__input > span{
+    color: var(--clr-text-primary);
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+.form__form input,
+.form__form textarea,
+.form__form button,
+.form__form select,
+.form__buttons a,
+.form__container .form__file{
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 10px;
+    color: var(--clr-text-primary);
+    background-color: var(--clr-bg-secondary);
+    font-size: 1.1rem;
+}
+
+.form__form input:focus,
+.form__form textarea:focus,
+.form__form button:hover,
+.form__form button:hover,
+.form__form input:focus{
+    color: var(--clr-accent-blue);
+    background-color: var(--clr-bg-tertiary);
+}
+
+.form__radio{
+    width: 100%;
+    padding: 14px 20px;
+    background-color: var(--clr-bg-secondary);
+    border-radius: 10px;
+}
+
+.form__radio.flex{
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.form__radio .flex{
+    gap: 4px;
+}
+
+.form__radio .flex input{
+    cursor: pointer;
+}
+
+.form__input.checkbox{
+    flex-direction: row;
+    align-items: center;
+}
+
+.form__input.checkbox input{
+    width: max-content;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.form__input.checkbox span{
+    flex: 1;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.form__buttons{
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid var(--clr-accent-blue);
+}
+
+.form__buttons.flex{
+    gap: 10px;
+}
+
+.form__buttons > a,
+.form__buttons > button{
+    flex: 1;
+}
+
+.form__buttons > a,
+.form__buttons > button{
+    text-align: center;
+    background-color: var(--clr-bg-secondary);
+}
+
+.form__buttons > a:hover{
+    color: var(--clr-accent-blue);
+    background-color: var(--clr-bg-tertiary);
+}
+
+.form__buttons > .cancel:hover{
+    color: var(--clr-text-primary);
+    background-color: var(--clr-accent-red);
+}
+
+.form__links{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form__links > h3 > a > span{
+    border-bottom: 1px solid var(--clr-text-primary);
+}
+
+/* Media Queries */
+/* Screen size less than 1100px */
+@media screen and (max-width: 1100px){
+    .form__container{
+        width: 60%;
+    }
+}
+
+/* Screen size less than 800px */
+@media screen and (max-width: 800px){
+    .form__container{
+        width: 70%;
+    }
+}
+
+/* Screen size less than 650px */
+@media screen and (max-width: 650px){
+    .form__container{
+        width: 80%;
+    }
+
+    .form__labels.flex{
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+}
+
+/* Screen size less than 500px */
+@media screen and (max-width: 500px){
+    .form__container{
+        width: 90%;
+    }
+}
+
+/* Screen size less than 410px */
+@media screen and (max-width: 410px){
+    .form__radio.flex,
+    .form__buttons.flex{
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .form__buttons.flex{
+        gap: 10px;
+    }
+
+    .form__buttons > a{
+        width: 100%;
+    }
+}
+
+/* Screen size less than 350px */
+@media screen and (max-width: 350px){
+    .form__container{
+        width: 96%;
+    }
+}

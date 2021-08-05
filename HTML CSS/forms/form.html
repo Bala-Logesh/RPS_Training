@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body class="flex">
+    <div class='form flex'>
+        <h2>Payment Form</h2>
+        <div class="form__container flex">
+            <form method='get' class='form__form flex' autocomplete="off">
+                <h2>Step 1: Your Details</h2>
+                <div class="form__input flex">
+                    <span>Name</span>
+                    <input type="text" name='name' placeholder='Enter your name' />
+                </div>
+                <div class="form__input flex">
+                    <span>Email</span>
+                    <input type="email" name='email' placeholder='Enter your email' />
+                </div>
+                <div class="form__input flex">
+                    <span>Phone Number</span>
+                    <input type="text" name='phone' placeholder='Enter your phone number' />
+                </div>
+
+                <h2>Step 2: Delivery Address</h2>
+                <div class="form__input flex">
+                    <span>Address</span>
+                    <textarea type="text" rows="6" name="address" placeholder='Enter your address'></textarea>
+                </div>
+                <div class="form__input flex">
+                    <span>Post Code</span>
+                    <input type="text" name='text' placeholder='Enter your postal code' />
+                </div>
+                <div class="form__input flex">
+                    <span>Country</span>
+                    <select name='country'>
+                        <option>Select your country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </div>
+                
+                <h2>Step 3: Card Details</h2>
+                <div class="form__input flex">
+                    <span>Card Type</span>
+                    <div class="form__radio flex">
+                        <div class="flex">
+                            <label htmlFor="visa"><input type="radio" id="visa" name="status" value="visa" checked>Visa</label>
+                        </div>
+                        <div class="flex">
+                            <label htmlFor="rupay"><input type="radio" id="rupay" name="status" value="rupay">Rupay</label>
+                        </div>
+                        <div class="flex">
+                            <label htmlFor="master"><input type="radio" id="master" name="status" value="master">MasterCard</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__input flex">
+                    <span>Card Number</span>
+                    <input type="text" name='text' placeholder='Enter your card number' />
+                </div>
+                <div class="form__input flex">
+                    <span>Security Number</span>
+                    <input type="text" name='text' placeholder='Enter your 3 digit security code' />
+                </div>
+                <div class="form__input flex">
+                    <span>Name on card</span>
+                    <input type="text" name='text' placeholder='Enter the name on your card' />
+                </div>
+                <div class="form__buttons flex">
+                    <a href="../success.html">Make Payment</a>
+                    <a href="../home.html" class="cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
